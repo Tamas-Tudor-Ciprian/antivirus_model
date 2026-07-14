@@ -46,7 +46,7 @@ fn detect_file(path : &str) -> String{
 
 	if magic == "%PDF"{
 
-		to_return = "Yes this is a pdf file get him!".to_string()
+		to_return = "Yes this is a pdf file get him!".to_string();
 
 
 

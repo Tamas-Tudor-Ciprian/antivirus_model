@@ -18,7 +18,7 @@ struct Files{
 	extension: String,
 }
 
-
+//on a second thought this should all be stored in a json
 
 impl Files {
 
@@ -43,8 +43,12 @@ impl Files {
 		file_types.push(pdf);
 		let jpeg = Files::define(MAGIC_JPEG,"jpeg", ".jpg");
 		file_types.push(jpeg);
-		let gif87a = Files::define(MAGIC_GIF78A,"gif", ".gif");
-		
+		let gif87a = Files::define(MAGIC_GIF78A,"gif78a", ".gif");
+		file_types.push(gif87a);
+		let gif89a = Files::define(MAGIC_GIF89A,"gif89a", ".gif");
+		file_types.push(gif89a);
+		let zip = Files::define(
+	
 		file_types
 
 	}
